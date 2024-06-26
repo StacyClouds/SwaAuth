@@ -1,0 +1,22 @@
+name: Continuous Deployment
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup DotNet
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0
+
+      - name: Build
+        run: dotnet build --configuration Release
+
+      - name: Publish to NuGet
+        run: dotnet nuget push ./pkg/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
