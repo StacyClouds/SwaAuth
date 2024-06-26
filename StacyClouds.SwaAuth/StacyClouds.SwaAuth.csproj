@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
 	  <LangVersion>Latest</LangVersion>
 	  <Title>Static Web App Authentication and Authorization</Title>
-	  <Version>0.1</Version>
+	  <Version>0.1.1</Version>
 	  <Authors>Stacy Cashmore</Authors>
 	  <Company>StacyClouds</Company>
 	  <Description>A library of functions to use Blazor and .NET Azure Functions with Azure Static Web App authentication and authorization</Description>

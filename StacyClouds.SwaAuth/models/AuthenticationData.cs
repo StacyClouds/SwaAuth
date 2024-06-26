@@ -1,6 +1,6 @@
 ﻿namespace StacyClouds.SwaAuth.models;
 
-public class AuthenticationData
+internal class AuthenticationData
 {
     public ClientPrincipal? ClientPrincipal { get; set; }
 }
