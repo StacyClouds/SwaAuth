@@ -8,10 +8,10 @@ Welcome to SwaAuth! This library is designed to simplify the integration of Azur
 
 Before you begin, make sure you have the following:
 
-- An Azure subscription
-- Azure Static Web App configured for your application
-- Blazor WASM project set up
-- .NET Azure Function project set up
+- A Blazor WASM Application
+- A .NET Azure Function with HTTP triggers **(if using an API in your Azure Static Web App)**
+
+The NuGet package is built using .NET Standard 2.1
 
 ### Installation
 
@@ -31,7 +31,6 @@ Once SwaAuth is installed and configured, you can start using it in your applica
 #### Blazor WASM
 
 TODO
-
 
 #### .NET Azure Function
 
