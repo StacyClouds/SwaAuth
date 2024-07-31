@@ -19,10 +19,10 @@ To install SwaAuth, follow these steps:
 
 1. Open your Blazor WASM or .NET Azure Function project.
 2. Add the SwaAuth NuGet package to your project.
-    ```
-    dotnet add package SwaAuth
-    ```
-3. Configure SwaAuth in your application by following the documentation provided in the [Wiki](https://github.com/StacyClouds/SwaAuth/wiki).
+
+``` ps
+dotnet add package SwaAuth
+```
 
 ### Usage
 
@@ -30,13 +30,25 @@ Once SwaAuth is installed and configured, you can start using it in your applica
 
 #### Blazor WASM
 
-TODO
+To use SwaAuth in your Blazor WASM application add the following line to your `Program.cs` file:
+
+```csharp
+builder.Services.AddStaticWebAppsAuthentication();
+```
+
+The code above adds the [Microsoft.AspNetCore.Components.Authorization](https://www.nuget.org/packages/Microsoft.AspNetCore.Components.Authorization) NuGet package as well as adding an [`AuthenticationStateProvider`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.authorization.authenticationstateprovider?view=aspnetcore-8.0) to the service collection.
+
+Once this has been added, use auth in Blazor in the standard way. For more information see the [Microsoft documentation](https://learn.microsoft.com/en-us/aspnet/core/blazor/security/?view=aspnetcore-8.0#client-side-blazor-authentication).
 
 #### .NET Azure Function
 
-TODO
+In order to extract the Authentication information from the call to the Azure Function, you can use the [`StaticWebAppApiAuthentication`](https://github.com/StacyClouds/SwaAuth/blob/main/StacyClouds.SwaAuth/Api/StaticWebAppApiAuthentication.cs) class. This class contains a method called `GetClientPrincipal` which will extract the client principal from the request headers.
 
-For more detailed usage instructions, please refer to the [documentation](https://github.com/StacyClouds/SwaAuth/wiki).
+``` csharp
+var clientPrincipal = StaticWebAppApiAuthentication.GetClientPrincipal(request.Headers);
+```
+
+The library does not contain code to perform direct authentication, as this is handled by the Azure Static Web App. The `GetClientPrincipal` method will return a `ClientPrincipal` object which contains the user's identity and roles.
 
 ## Contributing
 
