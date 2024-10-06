@@ -1,4 +1,4 @@
-﻿namespace StacyClouds.SwaAuth.models;
+﻿namespace StacyClouds.SwaAuth.Models;
 
 public class SwaClaims
 {

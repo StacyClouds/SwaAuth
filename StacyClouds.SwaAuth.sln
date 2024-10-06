@@ -3,12 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StacyClouds.SwaAuth", "StacyClouds.SwaAuth\StacyClouds.SwaAuth.csproj", "{E3803CAC-2275-4DA0-83D3-18F3865E87A4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{F3390B76-AA30-415C-8C91-C5A17375C0CA}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\cd.yml = .github\workflows\cd.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Models", "StacyClouds.SwaAuth.Models\StacyClouds.SwaAuth.Models.csproj", "{77498216-72E8-4BE0-AB88-AB2784336F05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Client", "StacyClouds.SwaAuth.Client\StacyClouds.SwaAuth.Client.csproj", "{14C51134-A6E2-4AE7-B837-AB639B2C841B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Api", "StacyClouds.SwaAuth.Api\StacyClouds.SwaAuth.Api.csproj", "{8206D773-3B94-48D6-9ACA-D0EF2118ABFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +20,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E3803CAC-2275-4DA0-83D3-18F3865E87A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3803CAC-2275-4DA0-83D3-18F3865E87A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3803CAC-2275-4DA0-83D3-18F3865E87A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3803CAC-2275-4DA0-83D3-18F3865E87A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77498216-72E8-4BE0-AB88-AB2784336F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77498216-72E8-4BE0-AB88-AB2784336F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77498216-72E8-4BE0-AB88-AB2784336F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77498216-72E8-4BE0-AB88-AB2784336F05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C51134-A6E2-4AE7-B837-AB639B2C841B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C51134-A6E2-4AE7-B837-AB639B2C841B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C51134-A6E2-4AE7-B837-AB639B2C841B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C51134-A6E2-4AE7-B837-AB639B2C841B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8206D773-3B94-48D6-9ACA-D0EF2118ABFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8206D773-3B94-48D6-9ACA-D0EF2118ABFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8206D773-3B94-48D6-9ACA-D0EF2118ABFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8206D773-3B94-48D6-9ACA-D0EF2118ABFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

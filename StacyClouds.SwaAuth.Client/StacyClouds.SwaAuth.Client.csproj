@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+	<LangVersion>latest</LangVersion>
+	  <Title>Static Web App Authentication and Authorization</Title>
+	  <Version>0.1.4</Version>
+	  <Authors>Stacy Cashmore</Authors>
+	  <Company>StacyClouds</Company>
+	  <Description>A library of functions for Blazor with Azure Static Web App authentication and authorization</Description>
+	  <PackageProjectUrl>https://github.com/StacyClouds/SwaAuth</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/StacyClouds/SwaAuth</RepositoryUrl>
+	  <PackageTags>swa; blazor;</PackageTags>
+	  <PackageOutputPath>..\pkg</PackageOutputPath>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <IncludeReferencedProjects>True</IncludeReferencedProjects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE" Link="LICENSE">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StacyClouds.SwaAuth.Models\StacyClouds.SwaAuth.Models.csproj" PrivateAssets="All" />
+  </ItemGroup>
+
+	<PropertyGroup>
+		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+	</PropertyGroup>
+
+	<Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
+		<ItemGroup>
+			<!-- Filter out unnecessary files -->
+			<_ReferenceCopyLocalPaths Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference')->WithMetadataValue('PrivateAssets', 'All'))"/>
+		</ItemGroup>
+
+		<!-- Print batches for debug purposes -->
+		<Message Text="Batch for .nupkg: ReferenceCopyLocalPaths = @(_ReferenceCopyLocalPaths), ReferenceCopyLocalPaths.DestinationSubDirectory = %(_ReferenceCopyLocalPaths.DestinationSubDirectory) Filename = %(_ReferenceCopyLocalPaths.Filename) Extension = %(_ReferenceCopyLocalPaths.Extension)" Importance="High" Condition="'@(_ReferenceCopyLocalPaths)' != ''" />
+
+		<ItemGroup>
+			<!-- Add file to package with consideration of sub folder. If empty, the root folder is chosen. -->
+			<BuildOutputInPackage Include="@(_ReferenceCopyLocalPaths)" TargetPath="%(_ReferenceCopyLocalPaths.DestinationSubDirectory)"/>
+		</ItemGroup>
+	</Target>
+
+</Project>

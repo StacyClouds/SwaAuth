@@ -15,8 +15,12 @@ jobs:
         with:
           dotnet-version: 8.0
 
-      - name: Build
+      - name: Build Client
         run: dotnet build --configuration Release
+
+      - name: Build Api
+        run: dotnet build -p ./StacyClouds.SwaAuth.Api/StacyClouds.SwaAuth.Api.csproj --configuration Release
+
 
       - name: Publish to NuGet
         run: dotnet nuget push ./pkg/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
