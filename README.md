@@ -15,13 +15,22 @@ The NuGet package is built using .NET Standard 2.1
 
 ### Installation
 
-To install SwaAuth, follow these steps:
+There are 2 packages to be installed. One for the Blazor WASM Client, the other for the .NET Azure Function API.
 
-1. Open your Blazor WASM or .NET Azure Function project.
-2. Add the SwaAuth NuGet package to your project.
+#### CLient
+
+Either search for `StacyClouds.SwaAuth.Client` in the NuGet package manager of your IDE or run the following command in the folder of your Blazor WASM project
 
 ``` ps
-dotnet add package SwaAuth
+dotnet add package StacyClouds.SwaAuth.Client
+```
+
+#### Api
+
+Either search for `StacyClouds.SwaAuth.Api` in the NuGet package manager of your IDE or run the following command in the folder of your .NET Azure Function project
+
+``` ps
+dotnet add package StacyClouds.SwaAuth.Api
 ```
 
 ### Usage
@@ -48,7 +57,7 @@ In order to extract the Authentication information from the call to the Azure Fu
 var clientPrincipal = StaticWebAppApiAuthentication.GetClientPrincipal(request.Headers);
 ```
 
-The library does not contain code to perform direct authentication, as this is handled by the Azure Static Web App. The `GetClientPrincipal` method will return a `ClientPrincipal` object which contains the user's identity and roles.
+The library does not contain code to perform direct authentication, as this is handled by the Azure Static Web App itself. The `GetClientPrincipal` method will return a `ClientPrincipal` object which contains the user's identity and roles contained in the headers the Azure Static Web Application injects into the request when directing it to the Api
 
 ## Contributing
 
