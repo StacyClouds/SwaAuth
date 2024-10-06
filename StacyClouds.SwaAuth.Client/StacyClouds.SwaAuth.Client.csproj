@@ -3,30 +3,35 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
-	  <LangVersion>Latest</LangVersion>
+	<LangVersion>latest</LangVersion>
 	  <Title>Static Web App Authentication and Authorization</Title>
 	  <Version>0.1.1</Version>
 	  <Authors>Stacy Cashmore</Authors>
 	  <Company>StacyClouds</Company>
-	  <Description>A library of functions to use Blazor and .NET Azure Functions with Azure Static Web App authentication and authorization</Description>
+	  <Description>A library of functions for Blazor with Azure Static Web App authentication and authorization</Description>
 	  <PackageProjectUrl>https://github.com/StacyClouds/SwaAuth</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/StacyClouds/SwaAuth</RepositoryUrl>
-	  <PackageTags>swa; blazor; azure functions</PackageTags>
+	  <PackageTags>swa; blazor;</PackageTags>
 	  <PackageOutputPath>..\pkg</PackageOutputPath>
 	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <IncludeReferencedProjects>True</IncludeReferencedProjects>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\LICENSE">
-      <Pack>True</Pack>
+    <None Include="..\LICENSE" Link="LICENSE">
       <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
     </None>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.6" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StacyClouds.SwaAuth.Models\StacyClouds.SwaAuth.Models.csproj" />
   </ItemGroup>
 
 </Project>

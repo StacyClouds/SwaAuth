@@ -1,8 +1,7 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Http;
-using StacyClouds.SwaAuth.models;
+using StacyClouds.SwaAuth.Models;
 
 namespace StacyClouds.SwaAuth.Api;
 
