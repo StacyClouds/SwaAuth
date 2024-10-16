@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	  <Title>Static Web App API Authentication and Authorization</Title>
-	  <Version>0.1.4</Version>
+	  <Version>0.2.0</Version>
 	  <Authors>Stacy Cashmore</Authors>
 	  <Company>StacyClouds</Company>
 	  <Description>A library of functions for .NET Azure Functions with Azure Static Web App authentication and authorization</Description>
@@ -26,7 +26,7 @@
    </ItemGroup>
   
    <ItemGroup>
-     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.2.0" />
+	   <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="[3.1.0,4.0.0)" />
    </ItemGroup>
 
 	<ItemGroup>
