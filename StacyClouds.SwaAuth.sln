@@ -18,11 +18,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Tests",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MakingApp", "MakingApp", "{71425969-B228-4F86-B5EB-E5DCC7550DBE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MakingApp 8.0", "MakingApp 8.0", "{71425969-B228-4F86-B5EB-E5DCC7550DBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Function", "StacyClouds.Auth.MakingApp.Function\StacyClouds.Auth.MakingApp.Function.csproj", "{1B17D95D-1B9B-45E7-B2EF-85919FD24642}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Blazor", "MakingApp 8.0\StacyClouds.Auth.MakingApp.Blazor\StacyClouds.Auth.MakingApp.Blazor.csproj", "{FD6E5DA9-D53E-4DD9-94D8-663349119395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Blazor", "StacyClouds.Auth.MakingApp.Blazor\StacyClouds.Auth.MakingApp.Blazor.csproj", "{FD6E5DA9-D53E-4DD9-94D8-663349119395}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MakingApp 9.0", "MakingApp 9.0", "{EAAD3321-C9E0-49CD-89EE-5FA6C0AA9547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Blazor", "MakingApp 9.0\StacyClouds.Auth.MakingApp.Blazor\StacyClouds.Auth.MakingApp.Blazor.csproj", "{DD018571-6DCF-CC45-AB77-85FDAAFD306D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Function", "MakingApp 9.0\StacyClouds.Auth.MakingApp.Function\StacyClouds.Auth.MakingApp.Function.csproj", "{BC44A6FB-27E1-AA7C-DBD6-63B7FBB418D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Function", "MakingApp 8.0\StacyClouds.Auth.MakingApp.Function\StacyClouds.Auth.MakingApp.Function.csproj", "{BE52788A-A4B5-A62F-D801-312242BFEDED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,14 +52,22 @@ Global
 		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B17D95D-1B9B-45E7-B2EF-85919FD24642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B17D95D-1B9B-45E7-B2EF-85919FD24642}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B17D95D-1B9B-45E7-B2EF-85919FD24642}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B17D95D-1B9B-45E7-B2EF-85919FD24642}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD6E5DA9-D53E-4DD9-94D8-663349119395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD6E5DA9-D53E-4DD9-94D8-663349119395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD6E5DA9-D53E-4DD9-94D8-663349119395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD6E5DA9-D53E-4DD9-94D8-663349119395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD018571-6DCF-CC45-AB77-85FDAAFD306D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD018571-6DCF-CC45-AB77-85FDAAFD306D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD018571-6DCF-CC45-AB77-85FDAAFD306D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD018571-6DCF-CC45-AB77-85FDAAFD306D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC44A6FB-27E1-AA7C-DBD6-63B7FBB418D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC44A6FB-27E1-AA7C-DBD6-63B7FBB418D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC44A6FB-27E1-AA7C-DBD6-63B7FBB418D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC44A6FB-27E1-AA7C-DBD6-63B7FBB418D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE52788A-A4B5-A62F-D801-312242BFEDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE52788A-A4B5-A62F-D801-312242BFEDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE52788A-A4B5-A62F-D801-312242BFEDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE52788A-A4B5-A62F-D801-312242BFEDED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,8 +75,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{89485A59-F13D-4B0D-829E-C1D39DFECF80} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{71425969-B228-4F86-B5EB-E5DCC7550DBE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{1B17D95D-1B9B-45E7-B2EF-85919FD24642} = {71425969-B228-4F86-B5EB-E5DCC7550DBE}
 		{FD6E5DA9-D53E-4DD9-94D8-663349119395} = {71425969-B228-4F86-B5EB-E5DCC7550DBE}
+		{EAAD3321-C9E0-49CD-89EE-5FA6C0AA9547} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{DD018571-6DCF-CC45-AB77-85FDAAFD306D} = {EAAD3321-C9E0-49CD-89EE-5FA6C0AA9547}
+		{BC44A6FB-27E1-AA7C-DBD6-63B7FBB418D9} = {EAAD3321-C9E0-49CD-89EE-5FA6C0AA9547}
+		{BE52788A-A4B5-A62F-D801-312242BFEDED} = {71425969-B228-4F86-B5EB-E5DCC7550DBE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74021EA9-70D2-45D3-B531-9BD1F094BC79}

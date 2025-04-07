@@ -13,14 +13,30 @@ jobs:
       - name: Setup DotNet
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 8.0
+          dotnet-version: |
+            8.0
+            9.0
 
       - name: Build Client
-        run: dotnet build -p ./StacyClouds.SwaAuth.Client/StacyClouds.SwaAuth.Client.csproj --configuration Release
+        working-directory: ./StacyClouds.SwaAuth.Client
+        run: dotnet build --configuration Release
 
       - name: Build Api
-        run: dotnet build -p ./StacyClouds.SwaAuth.Api/StacyClouds.SwaAuth.Api.csproj --configuration Release
+        working-directory: ./StacyClouds.SwaAuth.Api
+        run: dotnet build --configuration Release
 
+      - name: Test Net 8.0
+        working-directory: ./StacyClouds.SwaAuth.Tests
+        run: dotnet test --configuration Release --verbosity normal --framework net8.0
 
-      - name: Publish to NuGet
-        run: dotnet nuget push ./pkg/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+      - name: Test Net 9.0
+        working-directory: ./StacyClouds.SwaAuth.Tests
+        run: dotnet test --configuration Release --verbosity normal --framework net9.0
+
+      - name: Publish Client to NuGet
+        working-directory: ./pkg
+        run: dotnet nuget push StacyClouds.SwaAuth.Client.*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}
+
+      - name: Publish Api to NuGet
+        working-directory: ./pkg
+        run: dotnet nuget push StacyClouds.SwaAuth.Api.*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }}

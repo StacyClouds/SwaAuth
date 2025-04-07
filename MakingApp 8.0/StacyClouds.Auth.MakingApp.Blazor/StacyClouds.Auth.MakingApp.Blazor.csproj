@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StacyClouds.SwaAuth.Client\StacyClouds.SwaAuth.Client.csproj" />
+    <ProjectReference Include="..\..\StacyClouds.SwaAuth.Client\StacyClouds.SwaAuth.Client.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	  <Title>Static Web App API Authentication and Authorization</Title>
-	  <Version>0.2.0</Version>
+	  <Version>0.4.0</Version>
 	  <Authors>Stacy Cashmore</Authors>
 	  <Company>StacyClouds</Company>
 	  <Description>A library of functions for .NET Azure Functions with Azure Static Web App authentication and authorization</Description>
