@@ -10,14 +10,9 @@ using System.Linq;
 
 namespace StacyClouds.SwaAuth.Client;
 
-public class StaticWebAppsAuthenticationStateProvider : AuthenticationStateProvider
+public class StaticWebAppsAuthenticationStateProvider(HttpClient httpClient) : AuthenticationStateProvider
 {
-	private readonly HttpClient _http;
-
-	public StaticWebAppsAuthenticationStateProvider(HttpClient httpClient)
-	{
-		_http = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
-	}
+	private readonly HttpClient httpClient = httpClient;
 
 	public override async Task<AuthenticationState> GetAuthenticationStateAsync()
 	{
@@ -35,7 +30,7 @@ public class StaticWebAppsAuthenticationStateProvider : AuthenticationStateProvi
 
 	private async Task<ClientPrincipal> GetClientPrinciple()
 	{
-		var data = await _http.GetFromJsonAsync<AuthenticationData>("/.auth/me");
+		var data = await httpClient.GetFromJsonAsync<AuthenticationData>("/.auth/me");
 		var clientPrincipal = data?.ClientPrincipal ?? new ClientPrincipal();
 		return clientPrincipal;
 	}

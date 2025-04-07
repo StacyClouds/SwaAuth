@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Client"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Api", "StacyClouds.SwaAuth.Api\StacyClouds.SwaAuth.Api.csproj", "{8206D773-3B94-48D6-9ACA-D0EF2118ABFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Tests", "StacyClouds.SwaAuth.Tests\StacyClouds.SwaAuth.Tests.csproj", "{89485A59-F13D-4B0D-829E-C1D39DFECF80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{8206D773-3B94-48D6-9ACA-D0EF2118ABFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8206D773-3B94-48D6-9ACA-D0EF2118ABFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8206D773-3B94-48D6-9ACA-D0EF2118ABFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
