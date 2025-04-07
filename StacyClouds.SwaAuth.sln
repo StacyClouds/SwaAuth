@@ -16,6 +16,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Api", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Tests", "StacyClouds.SwaAuth.Tests\StacyClouds.SwaAuth.Tests.csproj", "{89485A59-F13D-4B0D-829E-C1D39DFECF80}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MakingApp", "MakingApp", "{71425969-B228-4F86-B5EB-E5DCC7550DBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Function", "StacyClouds.Auth.MakingApp.Function\StacyClouds.Auth.MakingApp.Function.csproj", "{1B17D95D-1B9B-45E7-B2EF-85919FD24642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Blazor", "StacyClouds.Auth.MakingApp.Blazor\StacyClouds.Auth.MakingApp.Blazor.csproj", "{FD6E5DA9-D53E-4DD9-94D8-663349119395}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,9 +46,23 @@ Global
 		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89485A59-F13D-4B0D-829E-C1D39DFECF80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B17D95D-1B9B-45E7-B2EF-85919FD24642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B17D95D-1B9B-45E7-B2EF-85919FD24642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B17D95D-1B9B-45E7-B2EF-85919FD24642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B17D95D-1B9B-45E7-B2EF-85919FD24642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6E5DA9-D53E-4DD9-94D8-663349119395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6E5DA9-D53E-4DD9-94D8-663349119395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6E5DA9-D53E-4DD9-94D8-663349119395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6E5DA9-D53E-4DD9-94D8-663349119395}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89485A59-F13D-4B0D-829E-C1D39DFECF80} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{71425969-B228-4F86-B5EB-E5DCC7550DBE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1B17D95D-1B9B-45E7-B2EF-85919FD24642} = {71425969-B228-4F86-B5EB-E5DCC7550DBE}
+		{FD6E5DA9-D53E-4DD9-94D8-663349119395} = {71425969-B228-4F86-B5EB-E5DCC7550DBE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74021EA9-70D2-45D3-B531-9BD1F094BC79}

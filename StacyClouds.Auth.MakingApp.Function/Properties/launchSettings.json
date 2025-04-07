@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "StacyClouds.Auth.MakingApp.Function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7071"
+    }
+  }
+}
