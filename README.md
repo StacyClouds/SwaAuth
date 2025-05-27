@@ -1,5 +1,9 @@
 # SwaAuth
 
+## Last Run
+
+[![Continuous Deployment](https://github.com/StacyClouds/SwaAuth/actions/workflows/cd.yml/badge.svg)](https://github.com/StacyClouds/SwaAuth/actions/workflows/cd.yml)
+
 ## Getting Started
 
 Welcome to SwaAuth! This library is designed to simplify the integration of Azure Static Web App authentication into your Blazor WASM and .NET Azure Function applications.
