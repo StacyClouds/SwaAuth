@@ -18,7 +18,13 @@
         {
             var content = await new StreamReader(request.Body).ReadToEndAsync();
 
-            var clientPrincipal = JsonSerializer.Deserialize<ClientPrincipal>(content);
+            var clientPrincipal = JsonSerializer
+                .Deserialize<ClientPrincipal>(
+                  content,
+                  new JsonSerializerOptions
+                  {
+                      PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                  });
 
             if (clientPrincipal == null)
             {

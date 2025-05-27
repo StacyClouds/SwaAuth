@@ -17,6 +17,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.SwaAuth.Tests", "StacyClouds.SwaAuth.Tests\StacyClouds.SwaAuth.Tests.csproj", "{89485A59-F13D-4B0D-829E-C1D39DFECF80}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		ApiTests.http = ApiTests.http
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MakingApp 8.0", "MakingApp 8.0", "{71425969-B228-4F86-B5EB-E5DCC7550DBE}"
 EndProject
