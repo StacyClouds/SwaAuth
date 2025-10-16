@@ -14,7 +14,7 @@ public static class StaticWebAppApiAuthentication
         HttpHeaders headers,
         out ClientPrincipal? clientPrincipal)
     {
-        if (!headers.Contains("x-ms-client-principal"))
+        if (!headers.Any(h => h.Key.Equals("x-ms-client-principal", StringComparison.OrdinalIgnoreCase)))
         {
             clientPrincipal = null;
             return false;
@@ -41,7 +41,7 @@ public static class StaticWebAppApiAuthentication
     IHeaderDictionary headers,
     out ClientPrincipal? clientPrincipal)
     {
-        if (!headers.ContainsKey("x-ms-client-principal"))
+        if (!headers.Any(h => h.Key.Equals("x-ms-client-principal", StringComparison.OrdinalIgnoreCase)))
         {
             clientPrincipal = null;
             return false;
