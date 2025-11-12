@@ -34,8 +34,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Blazor\" />
-	  <Folder Include="Functions\" />
 	</ItemGroup>
 
 	<ItemGroup>
