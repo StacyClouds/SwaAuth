@@ -37,7 +37,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Functions\RoleProcessorTests.cs" />
 	</ItemGroup>
 
 </Project>
