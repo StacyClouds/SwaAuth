@@ -30,12 +30,12 @@ internal class RoleProcessor(ILogger<RoleProcessor> logger) : IRoleProcessor
             return [];
         }
 
-        logger.LogError("ProcessRoles called with ClientPrincipal. Claims count: {ClaimsCount}",
+        logger.LogInformation("ProcessRoles called with ClientPrincipal. Claims count: {ClaimsCount}",
             clientPrincipal.Claims?.Count() ?? 0);
 
         if (clientPrincipal.Claims != null)
         {
-            logger.LogError("Claims details: {Claims}",
+            logger.LogInformation("Claims details: {Claims}",
                 string.Join(", ", clientPrincipal.Claims.Select(c => $"[Typ: {c.Typ}, Val: {c.Val}]")));
         }
 
