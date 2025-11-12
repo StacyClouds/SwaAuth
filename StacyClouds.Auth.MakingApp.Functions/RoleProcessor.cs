@@ -54,7 +54,7 @@ internal class RoleProcessor(ILogger<RoleProcessor> logger) : IRoleProcessor
             .Select(claim => claim.Val)];
 
         // Log output
-        logger.LogError("ProcessRoles returning {RoleCount} roles: [{Roles}]",
+        logger.LogInformation("ProcessRoles returning {RoleCount} roles: [{Roles}]",
             result.Count,
             string.Join(", ", result));
 
