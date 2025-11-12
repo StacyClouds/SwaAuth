@@ -33,6 +33,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Function", "MakingApp 8.0\StacyClouds.Auth.MakingApp.Function\StacyClouds.Auth.MakingApp.Function.csproj", "{BE52788A-A4B5-A62F-D801-312242BFEDED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MakingApp 10.0", "MakingApp 10.0", "{D394D8D0-3629-417E-8289-84342A1641EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Blazor", "StacyClouds.Auth.MakingApp.Blazor\StacyClouds.Auth.MakingApp.Blazor.csproj", "{18A40CE1-A160-4778-A4AA-EA11796111E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Functions", "StacyClouds.Auth.MakingApp.Functions\StacyClouds.Auth.MakingApp.Functions.csproj", "{D9D6CBA2-99A1-46BE-B244-6B5EA2877F5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +77,14 @@ Global
 		{BE52788A-A4B5-A62F-D801-312242BFEDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE52788A-A4B5-A62F-D801-312242BFEDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE52788A-A4B5-A62F-D801-312242BFEDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A40CE1-A160-4778-A4AA-EA11796111E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A40CE1-A160-4778-A4AA-EA11796111E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A40CE1-A160-4778-A4AA-EA11796111E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A40CE1-A160-4778-A4AA-EA11796111E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9D6CBA2-99A1-46BE-B244-6B5EA2877F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D6CBA2-99A1-46BE-B244-6B5EA2877F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D6CBA2-99A1-46BE-B244-6B5EA2877F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D6CBA2-99A1-46BE-B244-6B5EA2877F5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +97,9 @@ Global
 		{DD018571-6DCF-CC45-AB77-85FDAAFD306D} = {EAAD3321-C9E0-49CD-89EE-5FA6C0AA9547}
 		{BC44A6FB-27E1-AA7C-DBD6-63B7FBB418D9} = {EAAD3321-C9E0-49CD-89EE-5FA6C0AA9547}
 		{BE52788A-A4B5-A62F-D801-312242BFEDED} = {71425969-B228-4F86-B5EB-E5DCC7550DBE}
+		{D394D8D0-3629-417E-8289-84342A1641EE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{18A40CE1-A160-4778-A4AA-EA11796111E7} = {D394D8D0-3629-417E-8289-84342A1641EE}
+		{D9D6CBA2-99A1-46BE-B244-6B5EA2877F5E} = {D394D8D0-3629-417E-8289-84342A1641EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74021EA9-70D2-45D3-B531-9BD1F094BC79}
