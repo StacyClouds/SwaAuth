@@ -15,12 +15,12 @@ internal class RoleProcessor(ILogger<RoleProcessor> logger) : IRoleProcessor
             return [];
         }
 
-        logger.LogError(clientPrincipal.IdentityProvider ?? "No Identity Provider");
-        logger.LogError(clientPrincipal.AccessToken ?? "No Access Token");
-        logger.LogError(clientPrincipal.UserId ?? "No User Id");
+        logger.LogInformation(clientPrincipal.IdentityProvider ?? "No Identity Provider");
+        logger.LogInformation(clientPrincipal.AccessToken ?? "No Access Token");
+        logger.LogInformation(clientPrincipal.UserId ?? "No User Id");
         foreach (var item in clientPrincipal.UserRoles ?? [])
         {
-            logger.LogError(item);
+            logger.LogInformation(item);
         }
 
         // Log input parameters
