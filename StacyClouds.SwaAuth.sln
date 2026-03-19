@@ -33,12 +33,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Function", "MakingApp 8.0\StacyClouds.Auth.MakingApp.Function\StacyClouds.Auth.MakingApp.Function.csproj", "{BE52788A-A4B5-A62F-D801-312242BFEDED}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MakingApp 10.0", "MakingApp 10.0", "{D394D8D0-3629-417E-8289-84342A1641EE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Blazor", "StacyClouds.Auth.MakingApp.Blazor\StacyClouds.Auth.MakingApp.Blazor.csproj", "{18A40CE1-A160-4778-A4AA-EA11796111E7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StacyClouds.Auth.MakingApp.Functions", "StacyClouds.Auth.MakingApp.Functions\StacyClouds.Auth.MakingApp.Functions.csproj", "{D9D6CBA2-99A1-46BE-B244-6B5EA2877F5E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
